@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento massinha 3</title>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required>
+        <button type="submit">Analisar</button>
+    </form>
+
+    <?php
+        ini_set('display_errors', 1);
+        ini_set('display_startup_errors', 1);
+        error_reporting(E_ALL);
+
+        $num1 = $_GET['num1'];
+        $num2 = $_GET['num2'];
+        $total = $num1 + $num2;
+        echo "<p>$total</p>";
+    ?> 
+</body>
+</html> 
